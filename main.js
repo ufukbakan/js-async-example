@@ -14,7 +14,7 @@ function doit(sec) {
 
 function main() {
     console.log(`Started at ${new Date()}`);
-    Promise.allSettled([doit(3), doit(2), doit(1)]).then(values => {
+    Promise.allSettled([doit(1), doit(2), doit(3)]).then(values => {
         console.log(values);
     });
 }
